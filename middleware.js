@@ -20,5 +20,5 @@ export function middleware(req) {
 }
 
 export const config = {
-    matcher: "/", // Applique ce middleware uniquement à la racine "/"
+    matcher: "/",
 };
