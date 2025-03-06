@@ -1,0 +1,46 @@
+@import "../../home/slider/sliderRoad";
+@import "../../home/slider/sliderContent";
+@import "../../home/slider/sliderArrow";
+@import "../../home/slider/sliderCTA";
+@import "../../home/slider/sliderInfo";
+@import "../../home/slider/sunBG";
+.slider-bg {
+    position: relative;
+    margin: 0 auto;
+    z-index: 0;
+    max-height: fit-content;
+}
+.sld-bg,
+.slider {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.slider {
+    display: none;
+}
+
+.sld-sun,
+.slider-content,
+.slide {
+    margin: 0 auto;
+    width: auto;
+}
+#slider.active-section {
+    .slider {
+        display: block;
+    }
+    .sld-container {
+        display: flex;
+    }
+    .sld-info_ctn {
+        display: flex;
+    }
+    & + section + #service {
+        background: #000;
+    }
+}
+#slider + section + #service {
+    background: #000;
+}
