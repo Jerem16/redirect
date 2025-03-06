@@ -12,13 +12,10 @@
         "@aws-amplify/core": "^6.7.2",
         "@aws-amplify/ui-react": "^6.7.1",
         "@formspree/react": "^2.5.1",
-        "aws-amplify": "^6.9.0",
-        "lucide-react": "^0.475.0",
+        "aws-amplify": "^6.13.3",
         "next": "15.0.3",
         "react": "^18.0.0",
-        "react-dom": "^18.0.0",
-        "sass": "1.60.0",
-        "sitemap": "^8.0.0"
+        "react-dom": "^18.0.0"
     },
     "devDependencies": {
         "@aws-amplify/backend": "^1.5.1",
@@ -32,7 +29,6 @@
         "esbuild": "^0.23.1",
         "eslint": "^9.15.0",
         "eslint-config-next": "15.0.3",
-        "sass-loader": "13.0.0",
         "tsx": "^4.19.0",
         "typescript": "^5.6.2",
         "webpack": "^5.0.0"

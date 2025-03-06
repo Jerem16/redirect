@@ -3,14 +3,16 @@ backend:
     phases:
         build:
             commands:
-                - nvm install 18.19.0
-                - nvm use 18.19.0
-                - yarn install --frozen-lockfile
+                - nvm install 21.1.0
+                - nvm use 21.1.0
+                - yarn cache clean
+                - yarn install --frozen-lockfile --prefer-offline
                 - npx ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID
 frontend:
     phases:
         build:
             commands:
+                - export NEXT_TELEMETRY_DISABLED=1
                 - npm run build
     artifacts:
         baseDirectory: .next

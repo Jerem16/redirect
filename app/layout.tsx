@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import HeaderLazy from "../src/components/header/HeaderLazy"
+// import HeaderLazy from "../src/components/header/HeaderLazy"
 import Footer from "../src/components/footer/footer"
 import ClientLayout from "./ClientLayout"; 
 import "./globals.css"
@@ -93,7 +93,7 @@ export default function RootLayout({
                     <ClientLayout>
                         <header>
                             <div className="content-wrapper">
-                                <HeaderLazy />
+                                {/* <HeaderLazy /> */}
                             </div>
                         </header>
                         <main>{children}</main>
