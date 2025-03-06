@@ -3,8 +3,8 @@ backend:
     phases:
         build:
             commands:
-                - nvm install 21.1.0
-                - nvm use 21.1.0
+                - nvm install 22.14.0
+                - nvm use 22.14.0
                 - yarn cache clean
                 - yarn install --frozen-lockfile --prefer-offline
                 - npx ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID
